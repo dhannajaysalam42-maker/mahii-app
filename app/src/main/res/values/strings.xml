@@ -1,0 +1,30 @@
+<resources>
+    <!-- 
+       =====================================================================
+       strings.xml
+       =====================================================================
+       PURPOSE:
+         Centralizes all text strings used in the app. This is an Android best
+         practice to support localization and make global text changes easy.
+       
+       TO CUSTOMIZE:
+         - Change "app_name" to change the name displayed on the phone launcher.
+         - Change "splash_app_name" and "splash_app_subtitle" to customize the
+           text on the native onboarding screen.
+       =====================================================================
+    -->
+    
+    <!-- 📛 The name of the app shown on the home screen and settings -->
+    <string name="app_name">Mahii</string>
+
+    <!-- ✨ Title shown on the onboarding screen below the logo -->
+    <string name="splash_app_name">Mahii</string>
+
+    <!-- ✏️ Short description shown on the onboarding screen -->
+    <string name="splash_app_subtitle">A showcase of intuitive and modern Android UI designs and templates.</string>
+
+    <!-- 🔘 Text for the CTA button that launches the TWA website -->
+    <string name="get_started_text">GET STARTED</string>
+
+    <string name="app_description">Smart AI assistant for voice commands, chat and study.</string>
+</resources>

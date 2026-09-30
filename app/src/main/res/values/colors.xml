@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     =====================================================================
+     colors.xml
+     =====================================================================
+     PURPOSE:
+       Defines reusable color values for the app's UI elements (buttons, 
+       text, splash screen background, etc.).
+     
+     TO CUSTOMIZE:
+       - Change the hex values here to match your brand colors.
+       - A hex color format is #AARRGGBB (Alpha, Red, Green, Blue).
+     =====================================================================
+-->
+<resources>
+    <!-- 🎨 Primary colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 🌐 Secondary / Gray shades -->
+    <color name="colorGrey">#A8AABC</color>
+    <color name="colorBlack">#011627</color>
+    
+    <!-- 🪟 Scrim and Transparency usually used for overlays -->
+    <color name="colorScrim">#66434343</color>
+    <color name="transparent">#00000000</color>
+</resources>

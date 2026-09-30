@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 
+       =====================================================================
+       themes.xml (Day Mode)
+       =====================================================================
+       PURPOSE:
+         Defines the visual theme and styling applied to the app in Light Mode.
+         It controls the appearance of the status bar, navigation bar, and
+         overall colors.
+     =====================================================================
+    -->
+    
+    <!-- Base application theme inheriting from Material3 without an Action Bar -->
+    <style name="Base.Theme.Appdadz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 🎨 Primary color for the app background -->
+        <item name="colorPrimary">@android:color/white</item>
+        
+        <!-- 📱 Making the Navigation Bar (bottom) transparent for an edge-to-edge look -->
+        <item name="android:navigationBarColor">@color/transparent</item>
+        
+        <!-- 📱 Making the Status Bar (top) transparent -->
+        <item name="android:statusBarColor">@color/transparent</item>
+        
+        <!-- 💡 Tells the system to use dark icons/text on the status bar (since background is light) -->
+        <item name="android:windowLightStatusBar">true</item> 
+        
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <!-- The actual theme used by the app, which just extends the Base theme above -->
+    <style name="Theme.Appdadz" parent="Base.Theme.Appdadz" />
+</resources>

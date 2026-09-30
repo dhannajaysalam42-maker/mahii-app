@@ -1,0 +1,9 @@
+{
+    "name": "Mahii",
+    "short_name": "Mahi",
+    "description": "Smart AI assistant for voice commands, chat and study.",
+    "start_url": "https://mahii-voice-flow.base44.app/",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/"
+}

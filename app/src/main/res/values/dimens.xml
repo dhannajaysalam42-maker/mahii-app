@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     =====================================================================
+     dimens.xml
+     =====================================================================
+     PURPOSE:
+       Defines standardized margin and padding dimensions to ensure
+       consistent spacing across different UI layouts.
+     =====================================================================
+-->
+<resources>
+    <dimen name="margin_default">8dp</dimen>   <!-- Small gap -->
+    <dimen name="margin_double">16dp</dimen>   <!-- Standard gap -->
+    <dimen name="margin_triple">24dp</dimen>   <!-- Large gap -->
+    <dimen name="margin_quadra">32dp</dimen>   <!-- Extra large gap -->
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+     =====================================================================
+     splash.xml
+     =====================================================================
+     PURPOSE:
+       Defines the theme for the Android 12+ Splash Screen API.
+       This is the very first screen shown when the app icon is tapped.
+       
+     TO CUSTOMIZE:
+       - Change the background color by editing `windowSplashScreenBackground`.
+       - Change the animated icon to your own logo.
+     =====================================================================
+-->
+<resources>
+    <!-- ✨ Theme declaration extending the core SplashScreen theme -->
+    <style name="Theme.AnimatedSplash.MySplash" parent="Theme.SplashScreen">
+        <!-- 🎨 Background color of the splash screen -->
+        <item name="windowSplashScreenBackground">@color/white</item>
+        
+        <!-- 🖼️ The central icon displayed (must be a vector drawable or PNG) -->
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        
+        <!-- 🎨 Background color for the icon itself if it has transparency -->
+        <item name="windowSplashScreenIconBackgroundColor">@color/black</item>
+        
+        <!-- ⏱️ Duration of the splash screen animation in milliseconds -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        
+        <!-- ➡️ The theme to switch to AFTER the splash screen finishes (the main app theme) -->
+        <item name="postSplashScreenTheme">@style/Theme.Appdadz</item>
+    </style>
+</resources>

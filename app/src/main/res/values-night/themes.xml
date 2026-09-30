@@ -1,0 +1,34 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 
+       =====================================================================
+       themes.xml (Night Mode)
+       =====================================================================
+       PURPOSE:
+         Defines the visual theme and styling applied to the app in Dark Mode.
+         Android automatically switches to this file when the user enables
+         Dark Theme on their device.
+     =====================================================================
+    -->
+    
+    <style name="Base.Theme.Appdadz" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 🎨 Primary color for the app background in Night mode (black) -->
+        <item name="colorPrimary">@android:color/black</item>
+        
+        <!-- 📱 Transparent navigation bar and status bar -->
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        
+        <!-- 🌙 For dark mode background, we could normally set this to false to get white icons.
+             Currently kept true based on original code, but change to false if status bar icons are invisible black-on-black -->
+        <item name="android:windowLightStatusBar">true</item> 
+        
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        
+        <!-- ✂️ Ensure layout spreads into the display cutout (notch area) on Android 9+ -->
+        <item name="android:windowLayoutInDisplayCutoutMode"
+            tools:targetApi="28">shortEdges</item>
+    </style>
+
+    <style name="Theme.Appdadz" parent="Base.Theme.Appdadz" />
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+     =====================================================================
+     get_started_demo_m_learn.xml
+     =====================================================================
+     PURPOSE:
+       Alternative or secondary layout for an onboarding screen. Similar to
+       activity_intro.xml, but includes a background image with transparency. 
+       Can be safely removed if not referenced in code, but kept for demo.
+     =====================================================================
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 🖼️ Background image positioned at the bottom with 30% opacity -->
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.3"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_logo_onboarding" />
+
+    <!-- 📜 Scrollable content (in case device screen is small) -->
+    <ScrollView
+        android:id="@+id/scrollable_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 🏷️ Logo image positioned at the top left -->
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/app_logo_onboarding" />
+
+            <!-- 📝 Title text below the logo -->
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="8dp"
+                android:letterSpacing=".1"
+                android:text="@string/splash_app_name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <!-- ✏️ Subtitle text below the title -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:letterSpacing=".1"
+                android:text="@string/splash_app_subtitle"
+                android:textColor="@color/black"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ⚓ Horizontal bottom layout pinned to the bottom of the screen -->
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="70dp"
+        android:paddingTop="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- ➖ Left Divider Line -->
+        <View
+            android:id="@+id/left_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+
+        <!-- 🟢 Get Started Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/get_started_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/black"
+            android:letterSpacing=".2"
+            android:text="@string/get_started_text"
+            android:textColor="@color/white" />
+
+        <!-- ➖ Right Divider Line -->
+        <View
+            android:id="@+id/right_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+</RelativeLayout>

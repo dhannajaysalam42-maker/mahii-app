@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+     =====================================================================
+     blank.xml
+     =====================================================================
+     PURPOSE:
+       A generic, nearly transparent blank frame layout used as a placeholder
+       or overlay in certain UI states to avoid flickering during transitions.
+     =====================================================================
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05FFFFFF" />
